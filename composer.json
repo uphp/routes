@@ -12,7 +12,7 @@
     },
     "autoload": {
         "psr-4": {
-            "UPhp\\ActionDispach" : "src/"
+            "UPhp\\ActionDispach\\" : "src/"
         }
     }
  }
