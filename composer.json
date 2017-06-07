@@ -8,11 +8,13 @@
         }
     ],    
     "require": {
-         "php": ">=7.0.0"
+         "php": ">=7.0.0",
+         "uphp/exception": "^1.0"
     },
     "autoload": {
         "psr-4": {
-            "UPhp\\ActionDispach\\" : "src/"
+            "UPhp\\ActionDispach\\" : "src/",
+            "UPhp\\ActionDispach\\Exception\\": "exceptions/"
         },
         "files": [
             "files/verb.php"
