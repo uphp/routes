@@ -17,7 +17,8 @@
             "UPhp\\ActionDispach\\Exception\\": "exceptions/"
         },
         "files": [
-            "files/verb.php"
+            "files/verb.php",
+            "files/requests.php"
         ]
     }
  }
