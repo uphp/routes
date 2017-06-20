@@ -1,6 +1,8 @@
 <?php
 namespace UPhp\ActionDispach;
 
+use UPhp\ActionDispach\Exception\NoRouteException;
+
 class Routes
 {
     private static $routes = [];
@@ -19,13 +21,14 @@ class Routes
         }
     }
 
-    public static function getControllerActionByURL($url)
+    public static function getControllerAction($config)
     {
         foreach (self::$routes as $route ) {
-            if ( $route["URL"] == $url)
+            if ( $route["URL"] == $config["URI"] && $route["VERB"] == $config["METHOD"])
             {
                 return $route;
             }
         }
+        throw new NoRouteException($config);
     }
 }

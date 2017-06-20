@@ -5,7 +5,7 @@ use \src\UphpException;
 
 class NoRouteException extends UphpException
 {
-    public function __construct($uri){
-        parent::__construct("Route <strong>" . $uri . " </strong>not found", __CLASS__);
+    public function __construct($config){
+        parent::__construct("Route <strong>" . $config["METHOD"] . " " . $config["URI"] . " </strong>not found", __CLASS__);
     }
 }

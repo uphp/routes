@@ -45,7 +45,7 @@ if (! function_exists('resources')) {
         $resources = [];
         array_push($resources, setVerb("GET", "/" . $controller, $controller . "#index")); // pessoas LISTA
         array_push($resources, setVerb("GET", "/" . $controller . "/new", $controller . "#new")); // pessoas/new FORM NOVA PESSOA
-        array_push($resources, setVerb("POST", "/" . $controller, $controller . "#save")); // pessoas SALVAR NOVA PESSOA
+        array_push($resources, setVerb("POST", "/" . $controller, $controller . "#create")); // pessoas CRIAR NOVA PESSOA
         array_push($resources, setVerb("GET", "/" . $controller . "/:id/edit", $controller . "#edit")); // pessoas/1/edit FORM EDITAR PESSOA
         array_push($resources, setVerb("PUT", "/" . $controller . "/:id", $controller . "#update")); // pessoas/1 ATUALIZAR PESSOA
         array_push($resources, setVerb("DELETE", "/" . $controller . "/:id", $controller . "#destroy")); // pessoas/1 EXCLUIR PESSOA
