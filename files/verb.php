@@ -48,7 +48,7 @@ if (! function_exists('resources')) {
         array_push($resources, setVerb("POST", "/" . $controller, $controller . "#create")); // pessoas CRIAR NOVA PESSOA
         array_push($resources, setVerb("GET", "/" . $controller . "/:id/edit", $controller . "#edit")); // pessoas/1/edit FORM EDITAR PESSOA
         array_push($resources, setVerb("PUT", "/" . $controller . "/:id", $controller . "#update")); // pessoas/1 ATUALIZAR PESSOA
-        array_push($resources, setVerb("DELETE", "/" . $controller . "/:id", $controller . "#destroy")); // pessoas/1 EXCLUIR PESSOA
+        array_push($resources, setVerb("DELETE", "/" . $controller, $controller . "#destroy")); // pessoas/1 EXCLUIR PESSOA
         return $resources;
     }
 }
