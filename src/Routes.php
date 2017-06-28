@@ -24,8 +24,7 @@ class Routes
     public static function getControllerAction($config)
     {
         foreach (self::$routes as $route ) {
-            if ( $route["URL"] == $config["URI"] && $route["VERB"] == $config["METHOD"])
-            {
+            if ( $route["URL"] == $config["URI"] && $route["VERB"] == $config["METHOD"]) {
                 return $route;
             }
         }
